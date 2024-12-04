@@ -23,7 +23,7 @@ public class solution {
     }
 
     public static ArrayList<Integer>[] reader() throws FileNotFoundException {
-        String src = "Day01/";
+        String src = "AdventOfCode24/Day01/";
         String fileName = "input.txt";
         File file = new File(src + fileName);
         Scanner sc = new Scanner(file);
@@ -39,7 +39,10 @@ public class solution {
                 input_Lists[0].add(lineScanner.nextInt());
                 input_Lists[1].add(lineScanner.nextInt());
             }
+            lineScanner.close();
         }
+
+        sc.close();
 
         return input_Lists;
 
